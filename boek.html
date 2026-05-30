@@ -43,32 +43,59 @@
       letter-spacing: 0.08em;
     }
     .book-toc {
-      max-width: 680px;
+      max-width: 900px;
       margin: 0 auto;
-      padding: 2.5rem 1.5rem 1.5rem;
+      padding: 3rem 1.5rem 2rem;
     }
-    .book-toc h2 {
+    .book-toc-label {
       font-family: 'Inter', sans-serif;
       font-size: 0.75rem;
       letter-spacing: 0.15em;
       text-transform: uppercase;
       color: var(--brown-mid);
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
     }
-    .book-toc ol {
-      padding-left: 1.2rem;
-      color: var(--brown-mid);
-      font-family: 'Inter', sans-serif;
-      font-size: 0.9rem;
-      line-height: 2;
+    .tile-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
     }
-    .book-toc ol a {
-      color: var(--brown-mid);
+    @media (max-width: 720px) {
+      .tile-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 480px) {
+      .tile-grid { grid-template-columns: 1fr; }
+    }
+    .tile {
+      display: block;
+      background: var(--warm-white);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.4rem 1.25rem;
       text-decoration: none;
+      transition: background 0.15s, border-color 0.15s, transform 0.1s;
     }
-    .book-toc ol a:hover {
+    .tile:hover {
+      background: var(--quote-bg);
+      border-color: var(--brown-light);
+      transform: translateY(-2px);
+    }
+    .tile-num {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--brown-light);
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    .tile-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 0.95rem;
+      font-style: italic;
       color: var(--brown-dark);
-      text-decoration: underline;
+      line-height: 1.4;
     }
     .part-header {
       margin-bottom: 1.5rem;
@@ -120,23 +147,23 @@
     <p class="subtitle">Dick Oosterwijk &nbsp;·&nbsp; Dertien delen</p>
   </header>
 
-  <!-- INHOUDSOPGAVE -->
+  <!-- TEGELS -->
   <div class="book-toc">
-    <h2>Inhoud</h2>
-    <ol>
-      <li><a href="#deel1">Methylering en de juiste vorm van vitamines</a></li>
-      <li><a href="#deel2">Keltisch zeezout en de mineralenbalans van je lichaam</a></li>
-      <li><a href="#deel3">Orgaanvlees als volwaardig voedsel</a></li>
-      <li><a href="#deel4">Bokashi — gefermenteerde compost als levend systeem</a></li>
-      <li><a href="#deel6">Magnesium en waarom je het vaak tekortkomt</a></li>
-      <li><a href="#deel7">Waarom je 's nachts wakker ligt en wat je eraan kunt doen</a></li>
-      <li><a href="#deel8">Blauwzuur, bitterstoffen en abrikozenpitten</a></li>
-      <li><a href="#deel9">Gluten en waarom ze ons steeds vaker dwarszitten</a></li>
-      <li><a href="#deel10">Methylering, homocysteïne en de juiste vorm van je vitamines</a></li>
-      <li><a href="#deel11">Eieren, cholesterol en hormonen</a></li>
-      <li><a href="#deel12">Rauwe melk en wat de spreker erin ziet</a></li>
-      <li><a href="#deel13">Het verhaal van de plek</a></li>
-    </ol>
+    <p class="book-toc-label">De gesprekken</p>
+    <div class="tile-grid">
+      <a class="tile" href="#deel1"><span class="tile-num">Deel 1</span><span class="tile-title">Methylering en de juiste vorm van vitamines</span></a>
+      <a class="tile" href="#deel2"><span class="tile-num">Deel 2</span><span class="tile-title">Keltisch zeezout en de mineralenbalans van je lichaam</span></a>
+      <a class="tile" href="#deel3"><span class="tile-num">Deel 3</span><span class="tile-title">Orgaanvlees als volwaardig voedsel</span></a>
+      <a class="tile" href="#deel4"><span class="tile-num">Deel 4</span><span class="tile-title">Bokashi — gefermenteerde compost als levend systeem</span></a>
+      <a class="tile" href="#deel6"><span class="tile-num">Deel 5</span><span class="tile-title">Magnesium en waarom je het vaak tekortkomt</span></a>
+      <a class="tile" href="#deel7"><span class="tile-num">Deel 6</span><span class="tile-title">Waarom je 's nachts wakker ligt en wat je eraan kunt doen</span></a>
+      <a class="tile" href="#deel8"><span class="tile-num">Deel 7</span><span class="tile-title">Blauwzuur, bitterstoffen en abrikozenpitten</span></a>
+      <a class="tile" href="#deel9"><span class="tile-num">Deel 8</span><span class="tile-title">Gluten en waarom ze ons steeds vaker dwarszitten</span></a>
+      <a class="tile" href="#deel10"><span class="tile-num">Deel 9</span><span class="tile-title">Methylering, homocysteïne en de juiste vorm van je vitamines</span></a>
+      <a class="tile" href="#deel11"><span class="tile-num">Deel 10</span><span class="tile-title">Eieren, cholesterol en hormonen</span></a>
+      <a class="tile" href="#deel12"><span class="tile-num">Deel 11</span><span class="tile-title">Rauwe melk en wat de spreker erin ziet</span></a>
+      <a class="tile" href="#deel13"><span class="tile-num">Deel 12</span><span class="tile-title">Het verhaal van de plek</span></a>
+    </div>
   </div>
 
   <article>
