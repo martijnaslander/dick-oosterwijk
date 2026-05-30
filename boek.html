@@ -136,6 +136,73 @@
       margin: 0 auto;
       padding: 2.5rem 1.5rem;
     }
+    /* Fact-check stijlen */
+    .fc-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.85rem;
+      margin: 1.5rem 0;
+    }
+    .fc-table th {
+      background: var(--brown-dark);
+      color: var(--cream);
+      padding: 0.6rem 0.8rem;
+      text-align: left;
+      font-weight: 500;
+    }
+    .fc-table td {
+      padding: 0.55rem 0.8rem;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+      line-height: 1.5;
+    }
+    .fc-table tr:nth-child(even) td { background: var(--warm-white); }
+    .fc-table a { color: var(--green-drenthe); }
+    .badge {
+      display: inline-block;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .badge-red   { background: #fde8e8; color: #b91c1c; }
+    .badge-green { background: #e8f5e4; color: #2e6b24; }
+    .badge-amber { background: #fef3c7; color: #92400e; }
+    .badge-blue  { background: #e0f0ff; color: #1d4ed8; }
+    .fc-warning {
+      background: #fff7ed;
+      border-left: 3px solid #f97316;
+      padding: 0.75rem 1rem;
+      margin: 1rem 0;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.85rem;
+      color: #7c2d12;
+      border-radius: 0 6px 6px 0;
+    }
+    .fc-correct {
+      background: var(--quote-bg);
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      margin: 1rem 0;
+    }
+    .fc-correct li {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9rem;
+      margin-bottom: 0.4rem;
+      color: var(--brown-dark);
+    }
+    .fc-meta {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+    }
   </style>
 </head>
 <body>
@@ -163,6 +230,7 @@
       <a class="tile" href="#deel11"><span class="tile-num">Deel 10</span><span class="tile-title">Eieren, cholesterol en hormonen</span></a>
       <a class="tile" href="#deel12"><span class="tile-num">Deel 11</span><span class="tile-title">Rauwe melk en wat de spreker erin ziet</span></a>
       <a class="tile" href="#deel13"><span class="tile-num">Deel 12</span><span class="tile-title">Het verhaal van de plek</span></a>
+      <a class="tile" href="#factcheck" style="border-color: var(--green-drenthe);"><span class="tile-num" style="color: var(--green-drenthe);">Nawoord</span><span class="tile-title">Fact-check — wat klopt, wat niet, wat open blijft</span></a>
     </div>
   </div>
 
@@ -742,6 +810,104 @@
 
         <p>Waar het wat mij betreft heen gaat, is een zelfvoorzienend dorp waar je één bent met de natuur en waar je rijkdom ergens anders zit dan op de bank. Festivalgangers noemden het al ruiger dan Ruigoord, en dat zag ik als compliment. Tegelijk is het hier al behoorlijk gecultiveerd, en daar moeten we voor waken: dat het geen mooierigheid wordt in plaats van echtheid.</p>
       </div>
+    </div>
+
+    <!-- FACT-CHECK -->
+    <div class="section" id="factcheck">
+      <hr class="section-divider">
+      <div class="part-header">
+        <span class="part-label" style="color: var(--green-drenthe);">Nawoord</span>
+        <h2>Fact-check — wat klopt, wat niet, wat open blijft</h2>
+      </div>
+
+      <div class="pull-quote">
+        <p>"Niet elke claim in dit boek is wetenschappelijk bewezen. Sommige kloppen, sommige niet, en bij sommige ontbreekt simpelweg de meting die de vraag zou kunnen beantwoorden."</p>
+      </div>
+
+      <div class="prose">
+        <p>De gesprekken in dit boek zijn opgenomen zoals ze zijn gevoerd: ongeredigeerd, persoonlijk, en vanuit Dicks eigen praktijkervaring. Dat maakt ze waardevol. Het maakt ze ook kwetsbaar voor wetenschappelijke toetsing. Hieronder een overzicht van de claims die Alexander — een geautomatiseerde onderzoeksagent met toegang tot meer dan 250 miljoen wetenschappelijke publicaties — heeft getoetst aan de literatuur.</p>
+
+        <p class="chapter-heading">Blauwzuur en amygdaline</p>
+
+        <p>Dick suggereert dat kankercellen minder weerstand hebben tegen blauwzuur dan gezonde cellen. Dit specifieke mechanisme is <span class="badge badge-red">ONWAAR</span> als het om cyanide gaat: drie onafhankelijke grote studies tonen aan dat amygdaline/laetrile niet effectief is als kankerbehandeling en een negatieve risico-batenverhouding heeft.</p>
+
+        <p>Wat de literatuur minder goed heeft onderzocht, is de derde afbraakstof van amygdaline: benzaldehyde. Een studie uit 2025 (Saito et al., British Journal of Cancer) toont in celmodellen aan dat benzaldehyde selectief werkt op kankercellen, ook op therapieresistente lijnen. Benzaldehyde-plasmawaarden na amygdaline-toediening zijn in geen enkele klinische studie gemeten. Dat is een lacune.</p>
+
+        <table class="fc-table">
+          <thead><tr><th>Frame</th><th>Oordeel</th></tr></thead>
+          <tbody>
+            <tr><td>Cyanide doodt selectief kankercellen</td><td><span class="badge badge-red">ONWAAR</span> — sterk bewijs</td></tr>
+            <tr><td>Amygdaline-dossier volledig gesloten</td><td><span class="badge badge-amber">NIET CORRECT</span> — benzaldehyde-vraag nooit gesteld</td></tr>
+            <tr><td>Amandelpitten veilig als zelfmedicatie</td><td><span class="badge badge-red">GEVAARLIJK</span> — cyanide-risico is reëel</td></tr>
+            <tr><td>Benzaldehyde als actief molecuul</td><td><span class="badge badge-blue">OPEN VRAAG</span> — plausibel, niet bewezen</td></tr>
+          </tbody>
+        </table>
+
+        <p class="chapter-heading">Overige claims</p>
+
+        <p><strong>Methylfolaat vs. foliumzuur bij zwangere vrouwen</strong> <span class="badge badge-amber">RISICOVOL</span><br>
+        Foliumzuur is bewezen effectief tegen neuralebuisdefecten. De aanbeveling om foliumzuur te vervangen door methylfolaat is onderbouwd voor mensen met een specifieke MTHFR-variant — niet voor alle zwangere vrouwen. Publiceren zonder die nuancering is riskant.</p>
+
+        <p><strong>Pasteurisatie verwijdert lactase, veroorzaakt lactose-intolerantie</strong> <span class="badge badge-red">FEITELIJK ONJUIST</span><br>
+        Lactase is een enzym dat de menselijke dunne darm zelf aanmaakt. Lactose-intolerantie is genetisch bepaald. Pasteurisatie speelt geen causale rol.</p>
+
+        <p><strong>Spaghetti even hoogglycemisch als suiker</strong> <span class="badge badge-red">ONJUIST</span><br>
+        Tafelsuiker heeft een GI van circa 65, wit brood circa 75. Spaghetti al dente: 40–49. Volkoren spaghetti: circa 42. Het verschil is substantieel.</p>
+
+        <p><strong>Rauwe eieren nadelig voor B6-opname</strong> <span class="badge badge-amber">VERKEERDE VITAMINE</span><br>
+        Avidine in rauw eiwit bindt biotine (B7), niet B6.</p>
+
+        <p><strong>Transdermale magnesiumabsorptie</strong> <span class="badge badge-blue">LACUNE</span><br>
+        Er is geen sterk wetenschappelijk bewijs voor opname van mineraalionen via de huid. De huidbarrière is effectief voor geladen ionen. "Omstreden" is de correcte kwalificatie.</p>
+
+        <p><strong>LDL "niet slecht"</strong> <span class="badge badge-amber">OVERSIMPLIFICATIE</span><br>
+        LDL als bouwstof is biochemisch correct. Maar de rol van LDL bij hart- en vaatziekten behoort tot de best gedocumenteerde mechanismen in de cardiologie.</p>
+
+        <p class="chapter-heading">Wat klopt</p>
+      </div>
+
+      <div class="fc-correct">
+        <ul>
+          <li>✅ B12 actief als methylcobalamine + adenosylcobalamine</li>
+          <li>✅ B6 actief als pyridoxaal-5-fosfaat (P5P)</li>
+          <li>✅ Magnesiumgebrek leidt tot slechter werkende mitochondriën en spierkrampen</li>
+          <li>✅ Dieetcholesterol uit eieren heeft weinig effect op serumcholesterol</li>
+          <li>✅ Bokashi = fermentatie bij lage temperatuur, conserveert goede bacteriën</li>
+          <li>✅ Powernap van circa 30 minuten is onderbouwd in de slaapliteratuur</li>
+          <li>✅ Lever bevat hoge B-vitamine concentraties in actieve vorm</li>
+        </ul>
+      </div>
+
+      <div class="prose">
+        <p class="chapter-heading">Bronnen</p>
+
+        <p>Blauwzuur / amygdaline / benzaldehyde:</p>
+        <table class="fc-table">
+          <thead><tr><th>Auteur</th><th>Jaar</th><th>Tijdschrift</th></tr></thead>
+          <tbody>
+            <tr><td>Moertel et al.</td><td>1982</td><td><a href="https://doi.org/10.1097/00006254-198206000-00028" target="_blank" rel="noopener">New England Journal of Medicine</a></td></tr>
+            <tr><td>Milazzo &amp; Horneber</td><td>2015</td><td><a href="https://doi.org/10.1002/14651858.CD005476.pub4" target="_blank" rel="noopener">Cochrane Database</a></td></tr>
+            <tr><td>Bromley et al.</td><td>2005</td><td><a href="https://doi.org/10.1345/aph.1E634" target="_blank" rel="noopener">Annals of Pharmacotherapy</a></td></tr>
+            <tr><td>Saito et al.</td><td>2025</td><td><a href="https://doi.org/10.1038/s41416-025-03006-4" target="_blank" rel="noopener">British Journal of Cancer</a></td></tr>
+            <tr><td>Kochi et al.</td><td>1980</td><td><a href="https://pubmed.ncbi.nlm.nih.gov/7389870/" target="_blank" rel="noopener">Cancer Treatment Reports</a></td></tr>
+          </tbody>
+        </table>
+
+        <p>Martijn Aslander publicaties (open access via Zenodo):</p>
+        <table class="fc-table">
+          <thead><tr><th>Titel</th><th>Taal</th></tr></thead>
+          <tbody>
+            <tr><td><a href="https://doi.org/10.5281/zenodo.18729379" target="_blank" rel="noopener">Amandelpitten, amygdaline/laetrile — Literatuursynthese</a></td><td>NL</td></tr>
+            <tr><td><a href="https://doi.org/10.5281/zenodo.18729444" target="_blank" rel="noopener">Apricot kernels, amygdalin/laetrile — Literature synthesis</a></td><td>EN</td></tr>
+            <tr><td><a href="https://doi.org/10.5281/zenodo.18729890" target="_blank" rel="noopener">The wrong molecule: benzaldehyde reappraisal</a></td><td>EN</td></tr>
+            <tr><td><a href="https://doi.org/10.5281/zenodo.18729956" target="_blank" rel="noopener">Literature synthesis (v2)</a></td><td>EN</td></tr>
+          </tbody>
+        </table>
+
+        <p>Overige bronnen: methylering (<a href="https://doi.org/10.1007/s10545-010-9177-4" target="_blank" rel="noopener">Blom &amp; Smulders 2010</a>), gluten (<a href="https://doi.org/10.1053/j.gastro.2024.02.050" target="_blank" rel="noopener">Discepolo et al. 2024</a>), rauwe melk (<a href="https://doi.org/10.3390/nu11030551" target="_blank" rel="noopener">Dekker et al. 2019</a>), cholesterol (<a href="https://doi.org/10.1093/eurheartj/ehv320" target="_blank" rel="noopener">ESC Guidelines 2015</a>), magnesium transdermaal (<a href="https://doi.org/10.1097/00007611-200510001-00038" target="_blank" rel="noopener">Shealy 2005</a>).</p>
+      </div>
+
+      <p class="fc-meta">Gegenereerd door Alexander (Cosmos-agent) · MOS kaart 4987 · Bijgewerkt 2026-05-30</p>
     </div>
 
   </article>
