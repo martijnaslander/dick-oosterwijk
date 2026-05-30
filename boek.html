@@ -139,12 +139,18 @@
       padding: 2.5rem 1.5rem;
     }
     /* Fact-check stijlen */
+    .fc-table-wrap {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      margin: 1.5rem 0;
+    }
     .fc-table {
       width: 100%;
       border-collapse: collapse;
       font-family: 'Inter', sans-serif;
       font-size: 0.85rem;
-      margin: 1.5rem 0;
+      margin: 0;
+      min-width: 400px;
     }
     .fc-table th {
       background: var(--brown-dark);
@@ -835,7 +841,7 @@
 
         <p>Wat de literatuur minder goed heeft onderzocht, is de derde afbraakstof van amygdaline: benzaldehyde. Een studie uit 2025 (Saito et al., British Journal of Cancer) toont in celmodellen aan dat benzaldehyde selectief werkt op kankercellen, ook op therapieresistente lijnen. Benzaldehyde-plasmawaarden na amygdaline-toediening zijn in geen enkele klinische studie gemeten. Dat is een lacune.</p>
 
-        <table class="fc-table">
+        <div class="fc-table-wrap"><table class="fc-table">
           <thead><tr><th>Frame</th><th>Oordeel</th></tr></thead>
           <tbody>
             <tr><td>Cyanide doodt selectief kankercellen</td><td><span class="badge badge-red">ONWAAR</span> — sterk bewijs</td></tr>
@@ -843,7 +849,7 @@
             <tr><td>Amandelpitten veilig als zelfmedicatie</td><td><span class="badge badge-red">GEVAARLIJK</span> — cyanide-risico is reëel</td></tr>
             <tr><td>Benzaldehyde als actief molecuul</td><td><span class="badge badge-blue">OPEN VRAAG</span> — plausibel, niet bewezen</td></tr>
           </tbody>
-        </table>
+        </table></div>
 
         <p class="chapter-heading">Overige claims</p>
 
@@ -884,7 +890,7 @@
         <p class="chapter-heading">Bronnen</p>
 
         <p>Blauwzuur / amygdaline / benzaldehyde:</p>
-        <table class="fc-table">
+        <div class="fc-table-wrap"><table class="fc-table">
           <thead><tr><th>Auteur</th><th>Jaar</th><th>Tijdschrift</th></tr></thead>
           <tbody>
             <tr><td>Moertel et al.</td><td>1982</td><td><a href="https://doi.org/10.1097/00006254-198206000-00028" target="_blank" rel="noopener">New England Journal of Medicine</a></td></tr>
@@ -893,10 +899,10 @@
             <tr><td>Saito et al.</td><td>2025</td><td><a href="https://doi.org/10.1038/s41416-025-03006-4" target="_blank" rel="noopener">British Journal of Cancer</a></td></tr>
             <tr><td>Kochi et al.</td><td>1980</td><td><a href="https://pubmed.ncbi.nlm.nih.gov/7389870/" target="_blank" rel="noopener">Cancer Treatment Reports</a></td></tr>
           </tbody>
-        </table>
+        </table></div>
 
         <p>Martijn Aslander publicaties (open access via Zenodo):</p>
-        <table class="fc-table">
+        <div class="fc-table-wrap"><table class="fc-table">
           <thead><tr><th>Titel</th><th>Taal</th></tr></thead>
           <tbody>
             <tr><td><a href="https://doi.org/10.5281/zenodo.18729379" target="_blank" rel="noopener">Amandelpitten, amygdaline/laetrile — Literatuursynthese</a></td><td>NL</td></tr>
@@ -904,7 +910,7 @@
             <tr><td><a href="https://doi.org/10.5281/zenodo.18729890" target="_blank" rel="noopener">The wrong molecule: benzaldehyde reappraisal</a></td><td>EN</td></tr>
             <tr><td><a href="https://doi.org/10.5281/zenodo.18729956" target="_blank" rel="noopener">Literature synthesis (v2)</a></td><td>EN</td></tr>
           </tbody>
-        </table>
+        </table></div>
 
         <p>Overige bronnen: methylering (<a href="https://doi.org/10.1007/s10545-010-9177-4" target="_blank" rel="noopener">Blom &amp; Smulders 2010</a>), gluten (<a href="https://doi.org/10.1053/j.gastro.2024.02.050" target="_blank" rel="noopener">Discepolo et al. 2024</a>), rauwe melk (<a href="https://doi.org/10.3390/nu11030551" target="_blank" rel="noopener">Dekker et al. 2019</a>), cholesterol (<a href="https://doi.org/10.1093/eurheartj/ehv320" target="_blank" rel="noopener">ESC Guidelines 2015</a>), magnesium transdermaal (<a href="https://doi.org/10.1097/00007611-200510001-00038" target="_blank" rel="noopener">Shealy 2005</a>).</p>
       </div>
