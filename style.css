@@ -99,6 +99,26 @@ body {
   letter-spacing: 0.1em;
 }
 
+.hero-btn {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.85rem 2rem;
+  background: var(--brown-light);
+  color: var(--brown-dark);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.hero-btn:hover {
+  background: #d4a87a;
+  transform: translateY(-1px);
+}
+
 .scroll-hint {
   position: absolute;
   bottom: 2rem;
