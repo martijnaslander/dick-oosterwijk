@@ -1,0 +1,1326 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Begrippenregister — Westerbroeken-interviews</title>
+  <script>if (!sessionStorage.getItem('dick_auth')) window.location.replace('index.html');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,700;1,400;1,700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=1">
+  <style>
+    /* ── Begrippen-specifieke stijl ── */
+    .begrippen-header {
+      background: var(--brown-dark);
+      color: var(--cream);
+      padding: 3rem 2rem 2rem;
+      text-align: center;
+    }
+    .begrippen-header h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(1.5rem, 4vw, 2.4rem);
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    .begrippen-header p {
+      color: var(--brown-light);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.95rem;
+    }
+
+    /* ── Nav balk ── */
+    .begrippen-nav {
+      background: var(--brown-dark);
+      border-top: 1px solid rgba(196, 149, 106, 0.3);
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+    .back-btn {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.85rem;
+      color: var(--brown-light);
+      text-decoration: none;
+    }
+    .back-btn:hover { color: var(--cream); }
+
+    /* ── Letternavigatie ── */
+    .letter-nav {
+      background: var(--quote-bg);
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .letter-nav a {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--brown-mid);
+      text-decoration: none;
+      padding: 0.2rem 0.45rem;
+      border-radius: 3px;
+      transition: background 0.15s, color 0.15s;
+    }
+    .letter-nav a:hover {
+      background: var(--brown-mid);
+      color: var(--cream);
+    }
+
+    /* ── Inhoud ── */
+    .begrippen-body {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 4rem;
+    }
+
+    /* ── Letter-sectie ── */
+    .letter-section {
+      margin-top: 2.5rem;
+    }
+    .letter-heading {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--brown-light);
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 0.25rem;
+      margin-bottom: 1.25rem;
+    }
+
+    /* ── Begrip-item ── */
+    .begrip {
+      margin-bottom: 1.5rem;
+    }
+    .begrip-term {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--brown-dark);
+      margin-bottom: 0.25rem;
+    }
+    .begrip-term a {
+      color: var(--green-drenthe);
+      text-decoration: underline;
+      text-decoration-color: rgba(74, 103, 65, 0.4);
+    }
+    .begrip-term a:hover {
+      text-decoration-color: var(--green-drenthe);
+    }
+    .begrip-def {
+      font-size: 0.95rem;
+      line-height: 1.7;
+      color: var(--text);
+    }
+    .begrip-deel {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-top: 0.2rem;
+    }
+    .badge-factcheck {
+      display: inline-block;
+      background: #e8d5b0;
+      color: #6b4c2a;
+      font-size: 0.7rem;
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      padding: 0.1rem 0.4rem;
+      border-radius: 3px;
+      margin-left: 0.4rem;
+      vertical-align: middle;
+    }
+
+    /* ── Footer ── */
+    .begrippen-footer {
+      text-align: center;
+      padding: 2rem;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border);
+    }
+    .begrippen-footer a { color: var(--brown-mid); }
+  </style>
+</head>
+<body>
+
+  <header class="begrippen-header">
+    <h1>Begrippenregister</h1>
+    <p>Alfabetisch overzicht van begrippen, termen en namen uit de Westerbroeken-interviews (afleveringen 1–13)</p>
+  </header>
+
+  <nav class="begrippen-nav">
+    <a href="boek.html" class="back-btn">← Terug naar het boek</a>
+  </nav>
+
+  <nav class="letter-nav" aria-label="Snel naar letter">
+    <a href="#A">A</a><a href="#B">B</a><a href="#C">C</a><a href="#D">D</a>
+    <a href="#E">E</a><a href="#F">F</a><a href="#G">G</a><a href="#H">H</a>
+    <a href="#I">I</a><a href="#J">J</a><a href="#K">K</a><a href="#L">L</a>
+    <a href="#M">M</a><a href="#N">N</a><a href="#O">O</a><a href="#P">P</a>
+    <a href="#R">R</a><a href="#S">S</a><a href="#T">T</a><a href="#V">V</a>
+    <a href="#W">W</a><a href="#Y">Y</a><a href="#Z">Z</a>
+  </nav>
+
+  <main class="begrippen-body">
+
+    <!-- A -->
+    <section class="letter-section" id="A">
+      <h2 class="letter-heading">A</h2>
+
+      <div class="begrip">
+        <div class="begrip-term">Abrikozenpitkernen</div>
+        <div class="begrip-def">Kleine amandelachtige kernen in de pit van een abrikoos; bevatten <a href="https://nl.wikipedia.org/wiki/Amygdaline" target="_blank" rel="noopener">amygdaline</a> en cyanide. Vroeger los verkrijgbaar, nu nauwelijks.</div>
+        <div class="begrip-deel">Deel 8</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Acetylcholine" target="_blank" rel="noopener">Acetylcholine</a></div>
+        <div class="begrip-def">Neurotransmitter die hersenvuring mogelijk maakt; grondstof is cholesterol.</div>
+        <div class="begrip-deel">Deel 11</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Adenosylcobalamine" target="_blank" rel="noopener">Adenosylcobalamine</a></div>
+        <div class="begrip-def">Actieve coënzymvorm van vitamine B12, samen met methylcobalamine; kan direct door cellen worden opgenomen.</div>
+        <div class="begrip-deel">Deel 1, 10</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Adrenaline" target="_blank" rel="noopener">Adrenaline</a></div>
+        <div class="begrip-def">Prestatiehormoon dat piekt rond het middaguur; wordt ook aangemaakt bij te lage bloedsuiker 's nachts, waardoor je wakker ligt.</div>
+        <div class="begrip-deel">Deel 7</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Aminozuurcycli</div>
+        <div class="begrip-def">Biochemische ketens in het lichaam waarvan <a href="https://nl.wikipedia.org/wiki/Methylering" target="_blank" rel="noopener">methylering</a> deel uitmaakt; produceren homocysteïne als bijproduct.</div>
+        <div class="begrip-deel">Deel 10</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Amygdaline" target="_blank" rel="noopener">Amygdaline</a> <span class="badge-factcheck">factcheck</span></div>
+        <div class="begrip-def">Stof in abrikozenpitkernen (ook bekend als laetrile of 'vitamine B17'); wetenschappelijk niet effectief bevonden als kankerbehandeling.</div>
+        <div class="begrip-deel">Deel 8, factcheck</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Andijvie</div>
+        <div class="begrip-def">Groente waaruit de bitterheid grotendeels is weggekweekt; kan aangevuld worden met wilde bladgroenten.</div>
+        <div class="begrip-deel">Deel 8</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Antiklontermiddel</div>
+        <div class="begrip-def">Additief in keukenzout; in hogere dosis schadelijk.</div>
+        <div class="begrip-deel">Deel 2</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Appelcider</div>
+        <div class="begrip-def">Gemaakt van eigen oogst op het terrein van Westerbroeken; 170 flessen in een jaar.</div>
+        <div class="begrip-deel">Deel 13</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Atherosclerose" target="_blank" rel="noopener">Atherosclerose</a> <span class="badge-factcheck">factcheck</span></div>
+        <div class="begrip-def">Aderverkalking; gerelateerd aan LDL-cholesterol en beschadigde vaatwanden door suiker.</div>
+        <div class="begrip-deel">Deel 11, factcheck</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Avidine" target="_blank" rel="noopener">Avidine</a> <span class="badge-factcheck">factcheck</span></div>
+        <div class="begrip-def">Eiwit in rauw eiwit dat <a href="https://nl.wikipedia.org/wiki/Biotine" target="_blank" rel="noopener">biotine (B7)</a> bindt; spreker verwart dit met B6.</div>
+        <div class="begrip-deel">Deel 11, factcheck</div>
+      </div>
+    </section>
+
+    <!-- B -->
+    <section class="letter-section" id="B">
+      <h2 class="letter-heading">B</h2>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Vitamine_B12" target="_blank" rel="noopener">B12 (vitamine)</a></div>
+        <div class="begrip-def">Methylbron; actieve vormen zijn methylcobalamine en adenosylcobalamine. Tekort vooral bij veganisten en vegetariërs.</div>
+        <div class="begrip-deel">Deel 1, 3, 10, 11</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Vitamine_B6" target="_blank" rel="noopener">B6 (vitamine)</a></div>
+        <div class="begrip-def">Methylbron; actieve vorm is pyridoxaal-5-fosfaat (P5P). Niet-actieve vorm hoopt zich op in de lever. Sven Kramer liep er een vergiftiging mee op.</div>
+        <div class="begrip-deel">Deel 1, 10</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Biotine" target="_blank" rel="noopener">B7 (biotine)</a> <span class="badge-factcheck">factcheck</span></div>
+        <div class="begrip-def">Wordt gebonden door avidine in rauw eiwit; spreker verwart dit met B6.</div>
+        <div class="begrip-deel">Deel 11, factcheck</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Barneveld</div>
+        <div class="begrip-def">Locatie van eierproject met pluimveehouders; eieren worden geoptimaliseerd op voedingswaarde.</div>
+        <div class="begrip-deel">Deel 11</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Benzaldehyde" target="_blank" rel="noopener">Benzaldehyde</a> <span class="badge-factcheck">factcheck</span></div>
+        <div class="begrip-def">Derde afbraakproduct van amygdaline naast glucose en cyanide; mogelijk werkzame stof, nooit goed onderzocht. Saito et al. (2025).</div>
+        <div class="begrip-deel">Factcheck</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Berk</div>
+        <div class="begrip-def">Pionierboom op Westerbroeken; groeit een meter per jaar op de juiste grond.</div>
+        <div class="begrip-deel">Deel 13</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Bijnier</div>
+        <div class="begrip-def">Neemt na de menopauze een deel van de testosteronproductie van de eierstokken over, maar levert slechts de helft.</div>
+        <div class="begrip-deel">Deel 11</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Bitterkoekjes</div>
+        <div class="begrip-def">Bevatten abrikozenpitkernen als ingrediënt; staat op de ingrediëntenlijst.</div>
+        <div class="begrip-deel">Deel 8</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Bitterstoffen</div>
+        <div class="begrip-def">Stoffen met een bittere smaak, waaronder blauwzuurverbindingen; weggekweekt uit groenten zoals witlof en andijvie.</div>
+        <div class="begrip-deel">Deel 8</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Waterstofcyanide" target="_blank" rel="noopener">Blauwzuur (HCN)</a> <span class="badge-factcheck">factcheck</span></div>
+        <div class="begrip-def">Waterstofcyanide; aanwezig in zaden en pitten. Claim dat het selectief kankercellen doodt is wetenschappelijk onwaar.</div>
+        <div class="begrip-deel">Deel 8, factcheck</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Bloeddruk</div>
+        <div class="begrip-def">Verhoogd door te veel suiker en keukenzout; mechanisme loopt via mineralentekort en stressrespons van nieren.</div>
+        <div class="begrip-deel">Deel 2</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Bloedsuiker</div>
+        <div class="begrip-def">Te lage bloedsuiker 's nachts zorgt voor adrenalineaanmaak en wakker liggen.</div>
+        <div class="begrip-deel">Deel 7</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Bokashi" target="_blank" rel="noopener">Bokashi</a></div>
+        <div class="begrip-def">Gefermenteerde compost bij lage temperatuur; bevordert nuttige bacteriën in bodem, darm en huis.</div>
+        <div class="begrip-deel">Deel 4</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Botten</div>
+        <div class="begrip-def">Opslagmedium voor mineralen; worden aangesproken bij mineralentekort door zoet water of keukenzout.</div>
+        <div class="begrip-deel">Deel 2, 6</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Bronbaden</div>
+        <div class="begrip-def">Historisch gebruik van mineraalrijke bronnen; relevant voor magnesiumopname via de huid.</div>
+        <div class="begrip-deel">Deel 6</div>
+      </div>
+    </section>
+
+    <!-- C -->
+    <section class="letter-section" id="C">
+      <h2 class="letter-heading">C</h2>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Campylobacter" target="_blank" rel="noopener">Campylobacter</a> <span class="badge-factcheck">factcheck</span></div>
+        <div class="begrip-def">Ziekteverwekker die in rauwe melk kan voorkomen.</div>
+        <div class="begrip-deel">Deel 12, factcheck</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Celvocht</div>
+        <div class="begrip-def">Het intra- en extracellulaire vocht; samenstelling lijkt op verdund zeewater. Keltisch zout benadert die samenstelling meer dan keukenzout.</div>
+        <div class="begrip-deel">Deel 2</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Chloride</div>
+        <div class="begrip-def">Onderdeel van natriumchloride; aanwezig in keukenzout en Keltisch zout.</div>
+        <div class="begrip-deel">Deel 2</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Cholesterol" target="_blank" rel="noopener">Cholesterol</a></div>
+        <div class="begrip-def">Bouwstof voor neurotransmitters en hormonen; lever maakt grote hoeveelheden zelf aan. LDL is niet alleen 'slecht'.</div>
+        <div class="begrip-deel">Deel 11</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Chronobiologie" target="_blank" rel="noopener">Chronobiologie</a></div>
+        <div class="begrip-def">Studie van biologische ritmes; relevant voor de cortisolpiek en het verschil tussen ochtend- en avondmensen.</div>
+        <div class="begrip-deel">Deel 7</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Coeliakie" target="_blank" rel="noopener">Coeliakie</a></div>
+        <div class="begrip-def">Volledige glutenintolerantie; mensen met coeliakie mijden gluten consequent.</div>
+        <div class="begrip-deel">Deel 9</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Coenzym_Q10" target="_blank" rel="noopener">Coenzym Q10</a></div>
+        <div class="begrip-def">Stof in hart- en spiervlees; runderhart bevat circa tien keer zoveel als gewoon rundvlees. Werkt als reparatiemiddel.</div>
+        <div class="begrip-deel">Deel 3</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Conserveermiddelen</div>
+        <div class="begrip-def">Doden bacteriën in voedsel en vermoedelijk ook in de darm; aanleiding voor gebruik van probiotica of Bokashi.</div>
+        <div class="begrip-deel">Deel 4</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Cortisol" target="_blank" rel="noopener">Cortisol</a></div>
+        <div class="begrip-def">Prestatiehormoon dat piekt rond het middaguur, circa zes uur na het ontwaken.</div>
+        <div class="begrip-deel">Deel 7</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Cyanide" target="_blank" rel="noopener">Cyanide</a> <span class="badge-factcheck">factcheck</span></div>
+        <div class="begrip-def">Gif aanwezig in abrikozenpitkernen; EFSA waarschuwt voor vergiftigingsrisico bij kleine hoeveelheden.</div>
+        <div class="begrip-deel">Deel 8, factcheck</div>
+      </div>
+    </section>
+
+    <!-- D -->
+    <section class="letter-section" id="D">
+      <h2 class="letter-heading">D</h2>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Vitamine_D" target="_blank" rel="noopener">D3 (vitamine)</a></div>
+        <div class="begrip-def">Aangemaakt via zonlicht; nodig voor opname en opslag van mineralen in botten. Verband met zeebaden en genezing van reuma.</div>
+        <div class="begrip-deel">Deel 6, 11</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Darmbacteriën</div>
+        <div class="begrip-def">Anaerobe bacteriën in het darmslijmvlies; helpen bij vertering van gluten en andere stoffen. Afname bij glutenoverbelasting of conserveermiddelen.</div>
+        <div class="begrip-deel">Deel 4, 9</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Darmslijmvlies</div>
+        <div class="begrip-def">Barrière die voorkomt dat onverteerd voedsel in het bloed terechtkomt; wordt te doorlaatbaar bij glutenoverbelasting (<a href="https://nl.wikipedia.org/wiki/Leaky_gut" target="_blank" rel="noopener">leaky gut</a>).</div>
+        <div class="begrip-deel">Deel 9</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Diepe slaap</div>
+        <div class="begrip-def">De herstelfase van slaap; kan snel verlopen, waardoor de feitelijke slaapbehoefte lager is dan het aantal uren suggereert.</div>
+        <div class="begrip-deel">Deel 7</div>
+      </div>
+    </section>
+
+    <!-- E -->
+    <section class="letter-section" id="E">
+      <h2 class="letter-heading">E</h2>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Europese_Autoriteit_voor_Voedselveiligheid" target="_blank" rel="noopener">EFSA</a> <span class="badge-factcheck">factcheck</span></div>
+        <div class="begrip-def">Europese Autoriteit voor Voedselveiligheid; waarschuwt voor vergiftigingsrisico van abrikozenpitkernen.</div>
+        <div class="begrip-deel">Deel 8, factcheck</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Eieren</div>
+        <div class="begrip-def">Ideale beginverpakking met alle bouwstoffen voor een kuiken; omega-3/omega-6 verhouding hangt af van levensomstandigheden kip.</div>
+        <div class="begrip-deel">Deel 11</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Eierstokken</div>
+        <div class="begrip-def">Produceren testosteron voor en na de menopauze; productie daalt sterk na de overgang.</div>
+        <div class="begrip-deel">Deel 11</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Eiwitten</div>
+        <div class="begrip-def">Macronutriënt; aanbevolen voor snack voor het slapen om bloedsuikerdaling te voorkomen.</div>
+        <div class="begrip-deel">Deel 7</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Els (zwarte)</div>
+        <div class="begrip-def">Pionierboom op Westerbroeken; groeit snel op de juiste grond.</div>
+        <div class="begrip-deel">Deel 13</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">EM (effectieve micro-organismen)</div>
+        <div class="begrip-def">Commercieel verkrijgbare vorm van Bokashi.</div>
+        <div class="begrip-deel">Deel 4</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Enzym</div>
+        <div class="begrip-def">Biologische katalysator; <a href="https://nl.wikipedia.org/wiki/Lactase" target="_blank" rel="noopener">lactase</a> is het enzym voor lactosevertering. Ook toegevoegd aan kippenvoer om fytinezuur af te breken.</div>
+        <div class="begrip-deel">Deel 11, 12</div>
+      </div>
+    </section>
+
+    <!-- F -->
+    <section class="letter-section" id="F">
+      <h2 class="letter-heading">F</h2>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Fermentatie" target="_blank" rel="noopener">Fermentatie</a></div>
+        <div class="begrip-def">Langzaam vergaanproces bij lage temperatuur waarbij goede bacteriën actief blijven; basis van Bokashi.</div>
+        <div class="begrip-deel">Deel 4</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Foliumzuur" target="_blank" rel="noopener">Folaat</a></div>
+        <div class="begrip-def">Actieve vorm van foliumzuur; methylfolaat is de direct opneembare variant.</div>
+        <div class="begrip-deel">Deel 1, 10</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Foliumzuur" target="_blank" rel="noopener">Foliumzuur</a> <span class="badge-factcheck">factcheck</span></div>
+        <div class="begrip-def">Inactieve vorm van folaat; moet door lever worden omgezet. Officieel aanbevolen bij zwangerschap; spreker adviseert methylfolaat, wat afwijkt van medische richtlijnen.</div>
+        <div class="begrip-deel">Deel 1, 10, factcheck</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Fruitbomen</div>
+        <div class="begrip-def">Circa tachtig stuks geplant op Westerbroeken; opbrengst 400 kilo appels en peren per jaar.</div>
+        <div class="begrip-deel">Deel 13</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Fytinezuur" target="_blank" rel="noopener">Fytinezuur</a></div>
+        <div class="begrip-def">Stof in graan die kippen moeilijk kunnen verteren; afgebroken door enzym in het speciale kippenvoer van Barneveld.</div>
+        <div class="begrip-deel">Deel 11</div>
+      </div>
+    </section>
+
+    <!-- G -->
+    <section class="letter-section" id="G">
+      <h2 class="letter-heading">G</h2>
+
+      <div class="begrip">
+        <div class="begrip-term">Gasunie</div>
+        <div class="begrip-def">Vroegere eigenaar van het terrein van Westerbroeken; bouwde er een gasstation met turbines.</div>
+        <div class="begrip-deel">Deel 13</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Geluidsisolatie</div>
+        <div class="begrip-def">Aanwezig in de muren van de loods vanwege de geluidsbeperking van de turbines (max. 60 dB).</div>
+        <div class="begrip-deel">Deel 13</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Gletsjerrivier</div>
+        <div class="begrip-def">De bodem van Westerbroeken is de bedding van een gletsjerrivier uit de laatste ijstijd.</div>
+        <div class="begrip-deel">Deel 13</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Gluten" target="_blank" rel="noopener">Gluten</a></div>
+        <div class="begrip-def">Eiwitten in granen die deeg luchtig maken; glutengehalte in tarwe is door veredeling sterk gestegen.</div>
+        <div class="begrip-deel">Deel 9</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Glutenintolerantie</div>
+        <div class="begrip-def">Overgevoeligheid voor gluten; mogelijk deels omkeerbaar via darmbacteriën.</div>
+        <div class="begrip-deel">Deel 9</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Glycemische_index" target="_blank" rel="noopener">Glycemische index (GI)</a> <span class="badge-factcheck">factcheck</span></div>
+        <div class="begrip-def">Maat voor bloedsuikerpiek na voedselinname; spaghetti heeft GI circa 40–49, geen gelijkenis met suiker (GI ~65).</div>
+        <div class="begrip-deel">Deel 9, factcheck</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Groene Weg</div>
+        <div class="begrip-def">Biologische slager waar orgaanvlees eventueel te bestellen is.</div>
+        <div class="begrip-deel">Deel 3</div>
+      </div>
+    </section>
+
+    <!-- H -->
+    <section class="letter-section" id="H">
+      <h2 class="letter-heading">H</h2>
+
+      <div class="begrip">
+        <div class="begrip-term">Hart (orgaanvlees)</div>
+        <div class="begrip-def">Enkelvoudig gestreepte spier; rijkste bron van coenzym Q10. Bereiding als ragout of hachee, minimaal 1,5 uur stoven.</div>
+        <div class="begrip-deel">Deel 3</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Hausmacher</div>
+        <div class="begrip-def">Traditioneel worst waarbij orgaanvlees (nier, hart, lever) verwerkt wordt; klassieke manier om organen te bewaren.</div>
+        <div class="begrip-deel">Deel 3</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">HDL-cholesterol</div>
+        <div class="begrip-def">Doorgaans aangeduid als 'goed' cholesterol. Zie ook: <a href="https://nl.wikipedia.org/wiki/Cholesterol" target="_blank" rel="noopener">cholesterol</a>.</div>
+        <div class="begrip-deel">Deel 11</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Homocyste%C3%AFne" target="_blank" rel="noopener">Homocysteïne</a></div>
+        <div class="begrip-def">Bijproduct van aminozuurcycli; veroorzaakt ontstekingen op celniveau. Wordt onschadelijk gemaakt door methylering.</div>
+        <div class="begrip-deel">Deel 1, 10</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Hormonen</div>
+        <div class="begrip-def">Worden aangemaakt uit cholesterol; tekort aan grondstoffen leidt tot hormonale disbalans, ook na de menopauze.</div>
+        <div class="begrip-deel">Deel 11</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Hyponatri%C3%ABmie" target="_blank" rel="noopener">Hyponatriëmie</a> <span class="badge-factcheck">factcheck</span></div>
+        <div class="begrip-def">Te weinig natrium in het bloed door overdaad aan zoet water; relevant bij mineralenbalans.</div>
+        <div class="begrip-deel">Deel 2, factcheck</div>
+      </div>
+    </section>
+
+    <!-- I -->
+    <section class="letter-section" id="I">
+      <h2 class="letter-heading">I</h2>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Intermittent_fasting" target="_blank" rel="noopener">Intermittent fasting</a></div>
+        <div class="begrip-def">Eetpatroon met beperkt eetvenster; compatibel met een snack voor het slapen als koolhydraten vermeden worden.</div>
+        <div class="begrip-deel">Deel 7</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Intestinale permeabiliteit <span class="badge-factcheck">factcheck</span></div>
+        <div class="begrip-def">Doorlaatbaarheid van de darmwand; verhoogd bij coeliakie en mogelijk bij milde glutengevoeligheid (<a href="https://nl.wikipedia.org/wiki/Leaky_gut" target="_blank" rel="noopener">leaky gut</a>). Omstreden als algemeen mechanisme.</div>
+        <div class="begrip-deel">Deel 9, factcheck</div>
+      </div>
+    </section>
+
+    <!-- J -->
+    <section class="letter-section" id="J">
+      <h2 class="letter-heading">J</h2>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Jodium" target="_blank" rel="noopener">Jodium</a></div>
+        <div class="begrip-def">Mineraal soms toegevoegd aan keukenzout; in Barneveld-eieren verviervoudigd door voeroptimalisatie.</div>
+        <div class="begrip-deel">Deel 2, 11</div>
+      </div>
+    </section>
+
+    <!-- K -->
+    <section class="letter-section" id="K">
+      <h2 class="letter-heading">K</h2>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Kamp_Westerbork" target="_blank" rel="noopener">Kamp Westerbork</a></div>
+        <div class="begrip-def">Herdenkingslocatie nabij het terrein van Westerbroeken.</div>
+        <div class="begrip-deel">Deel 13</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Keltisch zeezout</div>
+        <div class="begrip-def">Zout uit Bretagne en Normandië; bevat circa 90% NaCl en 10% andere mineralen. Beter alternatief voor keukenzout.</div>
+        <div class="begrip-deel">Deel 2, 6</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Natriumchloride" target="_blank" rel="noopener">Keukenzout</a></div>
+        <div class="begrip-def">Bestaat voor ~99,9% uit natriumchloride; bevat antiklontermiddel. Mist de mineralen die Keltisch zout wel heeft.</div>
+        <div class="begrip-deel">Deel 2</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Kickboksen</div>
+        <div class="begrip-def">Activiteit die al vroeg werd aangeboden op Westerbroeken.</div>
+        <div class="begrip-deel">Deel 13</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Kinine</div>
+        <div class="begrip-def">Bitterstof die industrieel nog wordt gebruikt (bijv. in tonic); los nauwelijks verkrijgbaar.</div>
+        <div class="begrip-deel">Deel 8</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Klaver</div>
+        <div class="begrip-def">Deel van kruidenmengsel dat ingezaaid werd op het weiland van de Bokashi-boerderij; verbeterde melkkwaliteit.</div>
+        <div class="begrip-deel">Deel 4</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Koolhydraten</div>
+        <div class="begrip-def">Veroorzaken bloedsuikerpiek en -dal; vermijden voor het slapen om nachtelijk wakker liggen te voorkomen.</div>
+        <div class="begrip-deel">Deel 7</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Koorts</div>
+        <div class="begrip-def">Mechanisme om schadelijke bacteriën te doden; boven 40 graden sterven bacteriën.</div>
+        <div class="begrip-deel">Deel 4</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Sven_Kramer" target="_blank" rel="noopener">Kramer, Sven</a></div>
+        <div class="begrip-def">Schaatser die een B6-vergiftiging opliep door niet-actieve vorm van B6 te slikken.</div>
+        <div class="begrip-deel">Deel 1, factcheck</div>
+      </div>
+    </section>
+
+    <!-- L -->
+    <section class="letter-section" id="L">
+      <h2 class="letter-heading">L</h2>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Lactase" target="_blank" rel="noopener">Lactase</a> <span class="badge-factcheck">factcheck</span></div>
+        <div class="begrip-def">Enzym voor vertering van lactose; wordt aangemaakt in de eigen dunne darm. Pasteurisatie verwijdert geen lactase uit melk.</div>
+        <div class="begrip-deel">Deel 12, factcheck</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Lactose" target="_blank" rel="noopener">Lactose</a> <span class="badge-factcheck">factcheck</span></div>
+        <div class="begrip-def">Melksuiker; lactose-intolerantie is genetisch bepaald, niet veroorzaakt door pasteurisatie.</div>
+        <div class="begrip-deel">Deel 12, factcheck</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Laetrile <span class="badge-factcheck">factcheck</span></div>
+        <div class="begrip-def">Alternatieve naam voor amygdaline ('vitamine B17'); geen bewezen antikankerwerking.</div>
+        <div class="begrip-deel">Deel 8, factcheck</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">LDL-cholesterol <span class="badge-factcheck">factcheck</span></div>
+        <div class="begrip-def">Doorgaans aangeduid als 'slecht' cholesterol; is ook bouwstof voor hormonen. Rol bij <a href="https://nl.wikipedia.org/wiki/Atherosclerose" target="_blank" rel="noopener">atherosclerose</a> is wetenschappelijk breed onderbouwd.</div>
+        <div class="begrip-deel">Deel 11, factcheck</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Leaky_gut" target="_blank" rel="noopener">Leaky gut</a> <span class="badge-factcheck">factcheck</span></div>
+        <div class="begrip-def">Te doorlaatbaar darmslijmvlies; laat onverteerd voedsel door naar het bloed. Omstreden als algemeen mechanisme.</div>
+        <div class="begrip-deel">Deel 9, factcheck</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Lever (orgaan)</div>
+        <div class="begrip-def">Zet voedingsstoffen om in bruikbare vormen; overbelast bij inname van niet-actieve supplementen.</div>
+        <div class="begrip-deel">Deel 1, 10</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Lever (orgaanvlees)</div>
+        <div class="begrip-def">Bevat grote hoeveelheden B-vitamines in al omgezette vorm; bittere smaak, bakken met ui en knoflook. Varkenslever bijzonder rijk.</div>
+        <div class="begrip-deel">Deel 3</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Leverworst</div>
+        <div class="begrip-def">Traditionele bereiding van orgaanvlees; bewaart goed en maskeert de uitgesproken orgaansmaak.</div>
+        <div class="begrip-deel">Deel 3</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Listeria" target="_blank" rel="noopener">Listeria</a> <span class="badge-factcheck">factcheck</span></div>
+        <div class="begrip-def">Ziekteverwekker die in rauwe melk kan voorkomen.</div>
+        <div class="begrip-deel">Deel 12, factcheck</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Lymfestelsel</div>
+        <div class="begrip-def">Onderdeel van het afvoersysteem voor homocysteïne na methylering.</div>
+        <div class="begrip-deel">Deel 1</div>
+      </div>
+    </section>
+
+    <!-- M -->
+    <section class="letter-section" id="M">
+      <h2 class="letter-heading">M</h2>
+
+      <div class="begrip">
+        <div class="begrip-term">Maagzuur</div>
+        <div class="begrip-def">Fijn afgestemd systeem dat verstoord wordt door orale magnesiumsupplementen, die als maagzuurremmer werken.</div>
+        <div class="begrip-deel">Deel 6</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Magnesium" target="_blank" rel="noopener">Magnesium</a></div>
+        <div class="begrip-def">Mineraal nodig voor mitochondriënfunctie; tekort leidt tot spierkrampen en brede klachten. Opname via huid verdient voorkeur boven orale inname.</div>
+        <div class="begrip-deel">Deel 6</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Magnesiumchloride" target="_blank" rel="noopener">Magnesiumchloride</a></div>
+        <div class="begrip-def">Vorm van magnesium; niet geschikt voor orale inname maar uitstekend voor opname via huid. Gewonnen door Nedmag bij Veendam.</div>
+        <div class="begrip-deel">Deel 6</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Magnesiumcitraat</div>
+        <div class="begrip-def">Goed opneembare orale vorm van magnesium.</div>
+        <div class="begrip-deel">Deel 6</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Magnesiumlactaat</div>
+        <div class="begrip-def">Goed opneembare orale vorm van magnesium.</div>
+        <div class="begrip-deel">Deel 6</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Magnesiumolie</div>
+        <div class="begrip-def">Olieachtige vloeistof van magnesiumchloride en water; smeer je op de huid voor transdermale opname.</div>
+        <div class="begrip-deel">Deel 6</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Magnesiumoxide</div>
+        <div class="begrip-def">Niet geschikt voor inname als magnesiumsupplement.</div>
+        <div class="begrip-deel">Deel 6</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Magnesiumvlokken</div>
+        <div class="begrip-def">Gebruikt in voetenbad of bad voor transdermale magnesiumopname.</div>
+        <div class="begrip-deel">Deel 6</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Melanoom" target="_blank" rel="noopener">Melanoom</a></div>
+        <div class="begrip-def">Vorm van huidkanker; spreker claimt zelf iets gedaan te hebben met blauwzuur hiertegen. Niet medisch onderbouwd.</div>
+        <div class="begrip-deel">Deel 8</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Menopauze" target="_blank" rel="noopener">Menopauze</a></div>
+        <div class="begrip-def">Na de overgang daalt testosteronproductie; tekort aan vet en cholesterol verergert hormoonbalans.</div>
+        <div class="begrip-deel">Deel 11</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Mest</div>
+        <div class="begrip-def">Verwerkt met Bokashi; stinkt minder, bevat minder stikstof en verbetert de melkkwaliteit.</div>
+        <div class="begrip-deel">Deel 4</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Methylcobalamine" target="_blank" rel="noopener">Methylcobalamine</a></div>
+        <div class="begrip-def">Actieve coënzymvorm van vitamine B12; direct opneembaar door cellen.</div>
+        <div class="begrip-deel">Deel 1, 10</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Methylering" target="_blank" rel="noopener">Methylering</a></div>
+        <div class="begrip-def">Biochemisch proces waarbij homocysteïne onschadelijk wordt gemaakt via binding aan methylverbindingen.</div>
+        <div class="begrip-deel">Deel 1, 10</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Methylfolaat <span class="badge-factcheck">factcheck</span></div>
+        <div class="begrip-def">Actieve, direct opneembare vorm van folaat; spreker adviseert dit als alternatief voor foliumzuur, ook bij zwangerschap (afwijkend van richtlijnen).</div>
+        <div class="begrip-deel">Deel 1, 10, factcheck</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Middagdutje</div>
+        <div class="begrip-def">Powernap van circa 30 minuten; onderbouwd in slaapliteratuur. Vermindert totale benodigde nachtrust.</div>
+        <div class="begrip-deel">Deel 7</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Mineralen</div>
+        <div class="begrip-def">Aanwezig in zeewater en Keltisch zout; gaan verloren via zweet, tranen en urine. Opneembaar via huid.</div>
+        <div class="begrip-deel">Deel 2, 6</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Mitochondrium" target="_blank" rel="noopener">Mitochondriën</a></div>
+        <div class="begrip-def">Spijsverteringsorganen van de cel; functioneren slecht bij magnesiumgebrek.</div>
+        <div class="begrip-deel">Deel 6</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Methylsulfonylmethaan" target="_blank" rel="noopener">MSM (methylsulfonylmethaan)</a></div>
+        <div class="begrip-def">Een van de methylbronnen die homocysteïne kunnen binden.</div>
+        <div class="begrip-deel">Deel 1</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Methylenetetrahydrofolaatreductase" target="_blank" rel="noopener">MTHFR</a> <span class="badge-factcheck">factcheck</span></div>
+        <div class="begrip-def">Genetische variant waarbij omzetting van foliumzuur naar methylfolaat verminderd is; maakt methylfolaatadvies voor die subgroep onderbouwd.</div>
+        <div class="begrip-deel">Factcheck</div>
+      </div>
+    </section>
+
+    <!-- N -->
+    <section class="letter-section" id="N">
+      <h2 class="letter-heading">N</h2>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Natriumchloride" target="_blank" rel="noopener">Natriumchloride</a></div>
+        <div class="begrip-def">Hoofdbestanddeel van keukenzout (~99,9%) en Keltisch zeezout (~90%).</div>
+        <div class="begrip-deel">Deel 2</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Nedmag</div>
+        <div class="begrip-def">Bedrijf dat bij Veendam zuiver magnesiumchloride wint; een van de rijkste magnesiumvoorraden ter wereld.</div>
+        <div class="begrip-deel">Deel 6</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Neuralebuisdefect" target="_blank" rel="noopener">Neuralebuisdefect</a> <span class="badge-factcheck">factcheck</span></div>
+        <div class="begrip-def">Aangeboren afwijking zoals spina bifida; risico verkleind door foliumzuur bij zwangerschap.</div>
+        <div class="begrip-deel">Deel 10, factcheck</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Neurotransmitters</div>
+        <div class="begrip-def">Worden opgebouwd uit cholesterol; acetylcholine is een bekend voorbeeld.</div>
+        <div class="begrip-deel">Deel 7, 11</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Nier (orgaanvlees)</div>
+        <div class="begrip-def">Derde keuze na hart en lever voor honden en katten; ook geschikt voor mensen bij nierproblemen (werkhypothese).</div>
+        <div class="begrip-deel">Deel 3</div>
+      </div>
+    </section>
+
+    <!-- O -->
+    <section class="letter-section" id="O">
+      <h2 class="letter-heading">O</h2>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Omega-3-vetzuur" target="_blank" rel="noopener">Omega-3</a></div>
+        <div class="begrip-def">Gunstig vetzuur; hoger in eieren van kippen met beweging en goed voer.</div>
+        <div class="begrip-deel">Deel 11</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Omega-6-vetzuur" target="_blank" rel="noopener">Omega-6</a></div>
+        <div class="begrip-def">Minder gunstig vetzuur; hoger in eieren van kippen met weinig beweging en slecht voer.</div>
+        <div class="begrip-deel">Deel 11</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Oosterwijk, Dick</div>
+        <div class="begrip-def">Spreker in alle interviews; informaticus van oorsprong, initiatiefnemer van Westerbroeken.</div>
+        <div class="begrip-deel">Alle afleveringen</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Orgaanvlees" target="_blank" rel="noopener">Orgaanvlees</a></div>
+        <div class="begrip-def">Hart, lever en nier; vroeger het meest waardevolle deel van het dier. Nu moeilijk verkrijgbaar in Nederland.</div>
+        <div class="begrip-deel">Deel 3</div>
+      </div>
+    </section>
+
+    <!-- P -->
+    <section class="letter-section" id="P">
+      <h2 class="letter-heading">P</h2>
+
+      <div class="begrip">
+        <div class="begrip-term">Paardenbloem</div>
+        <div class="begrip-def">Wilde bladgroente; eetbaar en te gebruiken als bitterstof in gerechten (max. 10%).</div>
+        <div class="begrip-deel">Deel 8, 13</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Pasteurisatie" target="_blank" rel="noopener">Pasteurisatie</a> <span class="badge-factcheck">factcheck</span></div>
+        <div class="begrip-def">Verhitting van melk tot circa 70 graden of meer; verwijdert volgens spreker lactase, maar dit is wetenschappelijk niet vastgesteld.</div>
+        <div class="begrip-deel">Deel 12, factcheck</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Pioniersbomen</div>
+        <div class="begrip-def">Berk, wilg en zwarte els; groeien snel op Westerbroeken en zijn de basis van het voedselbos.</div>
+        <div class="begrip-deel">Deel 13</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Probiotica" target="_blank" rel="noopener">Probiotica</a></div>
+        <div class="begrip-def">Supplementen met nuttige bacteriën; nodig na blootstelling aan conserveermiddelen of als aanvulling.</div>
+        <div class="begrip-deel">Deel 4</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Pyridoxaal-5-fosfaat" target="_blank" rel="noopener">Pyridoxaal-5-fosfaat (P5P)</a></div>
+        <div class="begrip-def">Actieve, direct opneembare vorm van vitamine B6.</div>
+        <div class="begrip-deel">Deel 1, 10</div>
+      </div>
+    </section>
+
+    <!-- R -->
+    <section class="letter-section" id="R">
+      <h2 class="letter-heading">R</h2>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Radiosterrenwacht_Westerbork" target="_blank" rel="noopener">Radiosterrenwacht</a></div>
+        <div class="begrip-def">Nabijgelegen gebied met radiostilte; telefoons niet toegestaan.</div>
+        <div class="begrip-deel">Deel 13</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Raspoetin" target="_blank" rel="noopener">Raspoetin</a></div>
+        <div class="begrip-def">Historisch figuur die zich naar verluidt dagelijks microdoses cyanide zou hebben toegediend.</div>
+        <div class="begrip-deel">Deel 8</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Rauwe eieren <span class="badge-factcheck">factcheck</span></div>
+        <div class="begrip-def">Spreker eet ze om praktische redenen; avidine bindt biotine (B7), niet B6 zoals spreker zegt.</div>
+        <div class="begrip-deel">Deel 11, factcheck</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Rauwe_melk" target="_blank" rel="noopener">Rauwe melk</a> <span class="badge-factcheck">factcheck</span></div>
+        <div class="begrip-def">Ongepasteuriseerde melk; kan ziekteverwekkende bacteriën bevatten. EFSA raadt het af. Spreker ervaart het als probioticum.</div>
+        <div class="begrip-deel">Deel 12, factcheck</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Reuma</div>
+        <div class="begrip-def">Klachten die verdwijnen na een week zon en zeewater; verklaard via vitamine D3 en mineraalopname via de huid.</div>
+        <div class="begrip-deel">Deel 6</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Rode wijn</div>
+        <div class="begrip-def">Aanbevolen als avondsnack samen met kaas of worst, zonder brood.</div>
+        <div class="begrip-deel">Deel 7</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Rood vlees</div>
+        <div class="begrip-def">Vlees van een zoogdier; bevat B12-methylverbindingen. Twee à drie keer per week volstaat.</div>
+        <div class="begrip-deel">Deel 10</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Rotting</div>
+        <div class="begrip-def">Afbraakproces boven 40 graden waarbij goede bacteriën doodgaan; te onderscheiden van fermentatie.</div>
+        <div class="begrip-deel">Deel 4</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Ruigoord" target="_blank" rel="noopener">Ruigoord</a></div>
+        <div class="begrip-def">Vrije leefgemeenschap waarmee Westerbroeken vergeleken wordt.</div>
+        <div class="begrip-deel">Deel 13</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Runderhart</div>
+        <div class="begrip-def">Bevat circa tien keer zoveel coenzym Q10 als gewoon rundvlees; bereiding als ragout of hachee.</div>
+        <div class="begrip-deel">Deel 3</div>
+      </div>
+    </section>
+
+    <!-- S -->
+    <section class="letter-section" id="S">
+      <h2 class="letter-heading">S</h2>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Salmonella" target="_blank" rel="noopener">Salmonella</a> <span class="badge-factcheck">factcheck</span></div>
+        <div class="begrip-def">Ziekteverwekker; komt in Nederlandse eieren nauwelijks voor, maar wel in rauwe melk.</div>
+        <div class="begrip-deel">Deel 11, 12, factcheck</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Savanne</div>
+        <div class="begrip-def">Illustratie van mineralentekort bij jagers die zoet rivierwater dronken terwijl ze antilopen naliepen.</div>
+        <div class="begrip-deel">Deel 2</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Schotse hooglanders</div>
+        <div class="begrip-def">Ras van runderen dat buiten leeft in een natuurlijke omgeving; goed voorbeeld voor herkomst orgaanvlees.</div>
+        <div class="begrip-deel">Deel 3</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Selenium" target="_blank" rel="noopener">Selenium</a></div>
+        <div class="begrip-def">Mineraal in keukenzout en in zeewater; gemeten in Barneveld-eieren.</div>
+        <div class="begrip-deel">Deel 2, 11</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Slaap</div>
+        <div class="begrip-def">Verwerkt prikkels en lost problemen op; diepe slaap is bepalend, niet het aantal uren.</div>
+        <div class="begrip-deel">Deel 7</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Slochteren</div>
+        <div class="begrip-def">Vertrekpunt van de gasleiding die via Westerbroeken loopt.</div>
+        <div class="begrip-deel">Deel 13</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Spelt" target="_blank" rel="noopener">Spelt</a></div>
+        <div class="begrip-def">Oud tarweras met circa een kwart van het glutengehalte van moderne tarwe.</div>
+        <div class="begrip-deel">Deel 9</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Sperziebonen</div>
+        <div class="begrip-def">Voorbeeld van geïmporteerde groente (uit Kenia) die geselecteerd wordt op uiterlijk en houdbaarheid, niet op voedingswaarde.</div>
+        <div class="begrip-deel">Deel 6</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Spina_bifida" target="_blank" rel="noopener">Spina bifida</a> <span class="badge-factcheck">factcheck</span></div>
+        <div class="begrip-def">Aangeboren afwijking die samenhangt met folaattekort; risico verminderd door foliumzuur.</div>
+        <div class="begrip-deel">Deel 10, factcheck</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Stikstofbelasting</div>
+        <div class="begrip-def">Verminderd in mest die met Bokashi is behandeld; meetbaar.</div>
+        <div class="begrip-deel">Deel 4</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Suiker</div>
+        <div class="begrip-def">Beschadigt vaatwanden; verhoogt bloeddruk; kankercellen nemen het sneller op dan normale cellen.</div>
+        <div class="begrip-deel">Deel 7, 9, 11</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Supplementen</div>
+        <div class="begrip-def">Moeten in actieve, al omgezette vorm worden ingenomen om de lever te ontlasten.</div>
+        <div class="begrip-deel">Deel 1, 10</div>
+      </div>
+    </section>
+
+    <!-- T -->
+    <section class="letter-section" id="T">
+      <h2 class="letter-heading">T</h2>
+
+      <div class="begrip">
+        <div class="begrip-term">Tarwe</div>
+        <div class="begrip-def">Graansoort met sterk gestegen glutengehalte door veredeling; problematisch voor het darmstelsel.</div>
+        <div class="begrip-deel">Deel 9</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Testosteron" target="_blank" rel="noopener">Testosteron</a></div>
+        <div class="begrip-def">Hormoon verantwoordelijk voor levenslust, vrolijkheid en risicobereidheid; daalt na menopauze. Grondstof is cholesterol.</div>
+        <div class="begrip-deel">Deel 11</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Tiny houses</div>
+        <div class="begrip-def">Onderdeel van toekomstplan voor Westerbroeken als zelfvoorzienende gemeenschap.</div>
+        <div class="begrip-deel">Deel 13</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Tomaat</div>
+        <div class="begrip-def">Een tomaat op volle grond in Zuid-Italië bevat circa tien keer meer magnesium dan een kasteelt tomaat.</div>
+        <div class="begrip-deel">Deel 6</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Tranceparty</div>
+        <div class="begrip-def">Jaarlijks evenement op Westerbroeken met circa 500 bezoekers.</div>
+        <div class="begrip-deel">Deel 13</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Transdermale opname <span class="badge-factcheck">factcheck</span></div>
+        <div class="begrip-def">Opname van stoffen via de huid; omstreden voor mineraalionen zoals magnesium.</div>
+        <div class="begrip-deel">Deel 6, factcheck</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Turkse slager</div>
+        <div class="begrip-def">Aanbevolen als startpunt voor het kopen van orgaanvlees in Nederland.</div>
+        <div class="begrip-deel">Deel 3</div>
+      </div>
+    </section>
+
+    <!-- V -->
+    <section class="letter-section" id="V">
+      <h2 class="letter-heading">V</h2>
+
+      <div class="begrip">
+        <div class="begrip-term">Vaatwanden</div>
+        <div class="begrip-def">Beschadigd door bloedsuikerpieken; slibben dicht op plekken met hoge stroomsnelheid.</div>
+        <div class="begrip-deel">Deel 11</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Varkenslever</div>
+        <div class="begrip-def">Bevat zeer grote hoeveelheden B-vitamines in actieve vorm.</div>
+        <div class="begrip-deel">Deel 3</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Veendam</div>
+        <div class="begrip-def">Locatie van Nedmag; rijk aan zuiver magnesiumchloride.</div>
+        <div class="begrip-deel">Deel 6</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Veganisten</div>
+        <div class="begrip-def">Groep met verhoogd risico op B12-tekort vanwege afwezigheid van vlees.</div>
+        <div class="begrip-deel">Deel 3, 10</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Vegetariërs</div>
+        <div class="begrip-def">Vergelijkbaar risico op B12-tekort als veganisten; Barneveld-eieren kunnen dit gedeeltelijk compenseren.</div>
+        <div class="begrip-deel">Deel 3, 11</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Vetoplosbare vitamines</div>
+        <div class="begrip-def">Zitten in het vet van het dier, niet in het rode spiervlees; reden waarom vet vroeger hoog gewaardeerd werd.</div>
+        <div class="begrip-deel">Deel 3</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Voedingswaarde</div>
+        <div class="begrip-def">Niet vermeld op verpakkingen; groente wordt verkocht op gewicht, niet op voedingsinhoud.</div>
+        <div class="begrip-deel">Deel 6</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Voedselbos</div>
+        <div class="begrip-def">Terrein van Westerbroeken met fruitbomen, bessenstruiken en eetbare wilde planten.</div>
+        <div class="begrip-deel">Deel 13</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Voetenbad</div>
+        <div class="begrip-def">Methode voor transdermale magnesiumopname; effectief bij magnesiumtekort.</div>
+        <div class="begrip-deel">Deel 6</div>
+      </div>
+    </section>
+
+    <!-- W -->
+    <section class="letter-section" id="W">
+      <h2 class="letter-heading">W</h2>
+
+      <div class="begrip">
+        <div class="begrip-term">Weegbree</div>
+        <div class="begrip-def">Wilde bladgroente; eetbaar en bitterstof; te gebruiken in spinazie of andijvie (max. 10%). Spreker ervaart verbetering van luchtwegklachten.</div>
+        <div class="begrip-deel">Deel 8, 13</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Westerbroeken</div>
+        <div class="begrip-def">Terrein in Drenthe gekocht door Dick Oosterwijk; voormalig gasstation van de Gasunie; nu centrum voor yoga, sport, feesten en voedselbos.</div>
+        <div class="begrip-deel">Deel 13</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Wilg</div>
+        <div class="begrip-def">Pionierboom op Westerbroeken; groeit snel op de juiste grond.</div>
+        <div class="begrip-deel">Deel 13</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Witlof</div>
+        <div class="begrip-def">Groente waaruit de bitterheid grotendeels is weggekweekt; bittere kern niet langer nodig.</div>
+        <div class="begrip-deel">Deel 8</div>
+      </div>
+    </section>
+
+    <!-- Y -->
+    <section class="letter-section" id="Y">
+      <h2 class="letter-heading">Y</h2>
+
+      <div class="begrip">
+        <div class="begrip-term">Yoga</div>
+        <div class="begrip-def">Activiteit die al vroeg werd aangeboden op Westerbroeken.</div>
+        <div class="begrip-deel">Deel 13</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Yurt</div>
+        <div class="begrip-def">Tentwoning die Oosterwijk binnen wilde plaatsen op het terrein; buiten gold het als te veel bebouwing.</div>
+        <div class="begrip-deel">Deel 13</div>
+      </div>
+    </section>
+
+    <!-- Z -->
+    <section class="letter-section" id="Z">
+      <h2 class="letter-heading">Z</h2>
+
+      <div class="begrip">
+        <div class="begrip-term">Zeewater</div>
+        <div class="begrip-def">Evolutionaire basis van ons lichaamsvocht; circa 60% van het lichaam bestaat uit verdund zeewater.</div>
+        <div class="begrip-deel">Deel 2</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term"><a href="https://nl.wikipedia.org/wiki/Zink" target="_blank" rel="noopener">Zinc (zink)</a></div>
+        <div class="begrip-def">Mineraal aanwezig in zeewater en celvocht; ontbreekt in keukenzout.</div>
+        <div class="begrip-deel">Deel 2</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Zonnecollectoren</div>
+        <div class="begrip-def">Geplaatst op Westerbroeken voor warmteopvang; aanvulling op 94 zonnepanelen (23 kWp).</div>
+        <div class="begrip-deel">Deel 13</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Zonnepanelen</div>
+        <div class="begrip-def">94 stuks op het hoofdgebouw van Westerbroeken; leveren circa 23 kWp.</div>
+        <div class="begrip-deel">Deel 13</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Zuurdesembrood</div>
+        <div class="begrip-def">Compacter dan gewoon brood vanwege lager glutengehalte.</div>
+        <div class="begrip-deel">Deel 9</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Zwangerschap <span class="badge-factcheck">factcheck</span></div>
+        <div class="begrip-def">Spreker adviseert methylfolaat in plaats van foliumzuur; dit wijkt af van officiële medische richtlijnen.</div>
+        <div class="begrip-deel">Deel 10, factcheck</div>
+      </div>
+
+      <div class="begrip">
+        <div class="begrip-term">Zweet</div>
+        <div class="begrip-def">Bevat mineralen; deels terug te winnen door het lichaam via de huid.</div>
+        <div class="begrip-deel">Deel 2</div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="begrippen-footer">
+    <p>Dick Oosterwijk &nbsp;·&nbsp; <a href="https://elpine.nl" target="_blank">elpine.nl</a></p>
+    <p style="margin-top: 0.4rem;">Portret door <a href="https://martijnaslander.nl" target="_blank">Martijn Aslander</a></p>
+  </footer>
+
+</body>
+</html>
